@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>register2</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend><img
+                src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                alt="google"
+                width="80"
+            /></legend> 
+            <table border="1">
+            
+            <h3>회원가입</h3>
+            <form action="#" method="get">
+                <tbody>
+                    <colgroup>
+                        <col style="width: 150px;"/>
+                        <col style="width: 250px;"/>
+                    </colgroup>
+                    <tr>
+                                <th><label for="userid">아이디</label></th>
+                                <td><input type="text" id="userid" size="20" autofocus required></td>
+                    </tr><tr>   <th><label for="password1">비밀번호</label></th>
+                                <td><input type="password" id="password1" size="20" pattern="A-Za-Z0-9{8~}" required/></td>
+                    </tr><tr>   <th><label for="password2">비밀번호확인</label></th>
+                                <td><input type="password" id="password2" pattern="A-Za-Z0-9{8~}" required /></td>
+                    </tr><tr>   <th><label for="name">이름</label></th>
+                                <td><input type="text" id="name" required/></td>
+                    </tr><tr>   <th><label for="text">주민등록번호</label></th>
+                                <td><input type="text" id="text" size="10" pattern="\d{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])" required/>-<input type="password" id="text" size="10" pattern="[1-8]\d{6}" required></td>
+                    </tr>            
+                    </tr><tr>   <th><label for="email">이메일</th>
+                                <td><input type="text" id="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?".com></td>
+                    </tr><tr>   <th><label for="phone">연락처</label></th>
+                                <td><input type="tel" id="phone" pattern="01\d{1}-\d{4}-\d{4}"/></td>
+                    </tr>
+                    </tr><tr>   <th><label for="address">주소</label></th>
+                                <td><input type="address" id="address" /></td>
+                    </tr><tr>   <th>가입경로</th>
+                                <td><input type="text" list="road" name="S">
+                                <datalist id="road">
+                                <option value="blog">블로그</option>
+                                <option value="search">검색</option>
+                                <option value="adver">배너광고</option>
+                                <option value="sns">SNS</option></td></datalist>
+                    </tr><tr>   <th>직업</th>
+                                <td><select name="job" id="">
+                                <optgroup label="학생">
+                                <option value="preschool">미취학</option>
+                                <option value="element">초등학생</option>
+                                <option value="middle">중고등학생</option>
+                                <option value="university">대학생</option></optgroup>
+                                <optgroup label="일반인">
+                                <option value="employee">직장인</option>
+                                <option value="application">취준생</option></optgroup> 
+                    </select></td>
+                    </tr>                    
+                    </tr><tr>   
+                    </tr><tr>   <td colspan="2"><p>개인정보 수집 동의</p>
+                                    <input type="radio" id="radio1" checked />
+                                    <label for="radio1">동의</label>
+                                    <input type="radio" id="radio2" />
+                                    <label for="radio2">미동의</label></td>
+                    </tr><tr>   <td colspan="2"><p>관심 분야</p>
+                                    <input type="checkbox" id="hobby1" />
+                                    <label for="hobby1">코딩</label>
+                                    <input type="checkbox" id="hobby2" />
+                                    <label for="hobby2">디자인</label>
+                                    <input type="checkbox" id="hobby3" />
+                                    <label for="hobby3">취업</label>
+                                    <input type="checkbox" id="hobby4" />
+                                    <label for="hobby4">기타</label></td>
+                    </tr><tr>   
+                </tbody></table><p>
+                                <input
+                                    type="submit"
+                                    value="회원가입 완료하기"
+                                    onclick="alert('회원가입이 완료되었습니다.')"
+                                />
+                                <input type="reset" value="초기화하기" /></p>
+                </fieldset>
+            </form>
+    </body>
+</html>
