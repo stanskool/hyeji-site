@@ -20,8 +20,10 @@
     top: 2px;
     color: white;
     font-size: 5pt;
+    letter-spacing: 7px;
     text-align: center;
-    vertical-align: middle;
+    line-height: 4.5px;
+    vertical-align: midlle;
 
 }
 
