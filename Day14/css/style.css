@@ -31,6 +31,7 @@ li {
 
 fieldset ul li input {
     float: right;
+    margin-top: 10px;
 }
 
 fieldset p {
