@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                width: 100%;
+            }
+            div {
+                margin: 0px 5%;
+            }
+            li {
+                list-style-type: none;
+            }
+
+            body > div > nav > ul > li {
+                float: right;
+                display: inline;
+                margin-top: 35px;
+                margin-left: 15px;
+                margin-bottom: 3%;
+                font-size: 12pt;
+                font-weight: 500;
+                letter-spacing: -1.5pt;
+                color: rgb(70, 70, 70);
+            }
+
+            #submenu {
+                height: 0px;
+                margin-top: 20px;
+                overflow: hidden;
+            }
+
+            nav > ul > li:hover #submenu {
+                height: 200px;
+            }
+
+            #submenu > li {
+                padding: 5px 60px 5px 10px;
+                font-size: 10pt;
+                font-weight: 700;
+                text-align: left;
+                line-height: 25px;
+                background-color: rgb(240, 240, 240);
+            }
+
+            .logo_img {
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                float: left;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #nav {
+                overflow: hidden;
+            }
+
+            .menu1_sub1 {
+                background-color: white;
+                font-weight: 400;
+            }
+            .menu1_sub1:hover {
+                background-color: white;
+                font-weight: 400;
+                text-decoration: underline;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav id="nav">
+                <img
+                    src="../Day17/static/img/logo.png"
+                    alt="문화재청 로고"
+                    class="logo_img"
+                />
+                <ul>
+                    <li>문화재청 사진관</li>
+                    <li>3D 문화유산</li>
+                    <li>유네스코 등재유산</li>
+                    <li>기록유산</li>
+                    <li>조선왕릉</li>
+                    <li>궁궐/종묘</li>
+                    <li>
+                        문화유산 검색
+                        <ul style="clear: left; right;" id="submenu">
+                            <li>
+                                문화재 검색
+                                <ul>
+                                    <li class="menu1_sub1">
+                                        <a href="#">ㆍ문화재 검색</a>
+                                    </li>
+                                    <li class="menu1_sub1">
+                                        <a href="#"> ㆍ문화재 종목별 검색</a>
+                                    </li>
+                                    <li class="menu1_sub1">
+                                        <a href="#"> ㆍ우리지역 문화재</a>
+                                    </li>
+                                    <li class="menu1_sub1">
+                                        <a href="#">ㆍ유형 분류</a>
+                                    </li>
+                                    <li class="menu1_sub1">
+                                        <a href="#"> ㆍ문화재 안내판 검색</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>
