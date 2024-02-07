@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #container {
+                width: 600px;
+                height: 400px;
+                margin: 30px auto;
+                border: 1px solid black;
+                position: relative;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                border: 1px solid black;
+                position: absolute;
+                top: 0px;
+                left: 250px;
+                border: 1px solid black;
+            }
+
+            :root {
+                --dis1: 250px;
+                --dis2: -250px;
+                --dis3: 150px;
+            }
+
+            #cir2 {
+                transform: translateX(var(--dis1));
+            }
+
+            #cir3 {
+                transform: translateX(var(--dis2));
+            }
+
+            #cir4 {
+                transform: translateY(calc(var(--dis3) * 2));
+            }
+
+            #cir5 {
+                transform: translateX(var(--dis1))
+                    translateY(calc(var(--dis3) * 2));
+            }
+
+            #cir6 {
+                transform: translateX(var(--dis2))
+                    translateY(calc(var(--dis3) * 2));
+            }
+
+            #cir7 {
+                transform: translateX(var(--dis1)) translateY(calc(var(--dis3)));
+            }
+
+            #cir8 {
+                transform: translateX(var(--dis2)) translatey(calc(var(--dis3)));
+            }
+        </style>
+    </head>
+    <body id="container">
+        <div id="cir1"></div>
+        <div id="cir2"></div>
+        <div id="cir3"></div>
+        <div id="cir4"></div>
+        <div id="cir5"></div>
+        <div id="cir6"></div>
+        <div id="cir7"></div>
+        <div id="cir8"></div>
+    </body>
+</html>
