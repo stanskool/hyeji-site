@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: black;
+            }
+            body > div:first-child {
+                width: 100px;
+                height: 57.735px;
+                background-color: antiquewhite;
+                margin: 10% auto;
+
+                position: relative;
+
+                animation: rotate 3s linear infinite alternate-reverse;
+            }
+
+            body > div:first-child::after {
+                display: block;
+                content: "";
+
+                position: absolute;
+                top: -10px;
+
+                width: 100px;
+                height: 57.735px;
+                background-color: antiquewhite;
+                margin: 10% auto;
+
+                transform: rotate(60deg);
+            }
+
+            body > div:first-child::before {
+                display: block;
+                content: "";
+
+                position: absolute;
+                top: -10px;
+
+                width: 100px;
+                height: 57.735px;
+                background-color: antiquewhite;
+                margin: 10% auto;
+
+                transform: rotate(-60deg);
+            }
+
+            body > div:last-child {
+                display: block;
+
+                width: 80px;
+                height: 0px;
+
+                border-top: 60px solid aquamarine;
+                border-bottom: 0px solid aquamarine;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+
+                margin: 10% auto;
+
+                position: relative;
+
+                animation: scale 2s linear infinite alternate-reverse;
+            }
+
+            body > div:last-child::after {
+                display: block;
+                content: "";
+
+                width: 0px;
+                height: 0;
+
+                border-bottom: 45px solid aquamarine;
+                border-top: 0px solid transparent;
+                border-left: 55px solid transparent;
+                border-right: 55px solid transparent;
+
+                position: absolute;
+                top: -105px;
+                left: -15px;
+            }
+
+            @keyframes scale {
+                0% {
+                    transform: scale(100%);
+                }
+
+                100% {
+                    transform: scale(0%);
+                }
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+    </body>
+</html>
